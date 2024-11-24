@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+  body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #70c5ce;
+            margin: 0;
+        }
+
+        #gameContainer {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        #gameCanvas {
+            background-color: #fff;
+            border: 2px solid #000;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        #score {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #fff;
+            font-size: 24px;
+            font-family: sans-serif;
+            z-index: 10;
+        }
+
+        #startButton {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px 20px;
+            font-size: 20px;
+            font-family: sans-serif;
+            cursor: pointer;
+            background-color: #ffcc00;
+            border: none;
+            border-radius: 5px;
+            z-index: 20;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <div id="gameContainer">
+        <canvas id="gameCanvas"></canvas>
+        <h1 id="score">0</h1>
+        <button id="startButton">Start Game</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
